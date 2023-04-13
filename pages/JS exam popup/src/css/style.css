@@ -1,0 +1,82 @@
+body {
+    position: relative;
+    background-color: #333333;
+}
+.gallery-wrapper {
+    width: 100%;
+    padding: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: calc(0.2rem + 0.3vw);
+    flex-direction: row;
+    justify-content: center;
+}
+
+.list__element {
+    width: 32%;
+    cursor: pointer;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    border: 5px solid #b9b9b9;
+    border-radius: 5px;
+}
+.popup-wrapper{
+    background-color: rgba(0, 0, 0, 0.75);
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-field {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    width: 50px;
+    height: 50px;
+    background: #b9b9b9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.rectangle {
+    width: 50%;
+    height: 10%;
+    background: #000;
+    position: absolute;
+}
+
+.rotate-plus {
+    transform: rotate(45deg);
+}
+
+.rotate-minus {
+    transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 1000px) {
+    .list__element {
+        width: 49%;
+    }
+}

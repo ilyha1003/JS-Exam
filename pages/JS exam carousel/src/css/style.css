@@ -1,0 +1,108 @@
+body {
+    background: #000;
+    color: #fff;
+}
+
+.wrapper {
+    display: flex;
+    padding: 50px 0;
+}
+
+.header {
+    font-size: calc(2.5rem + 1.5vw);
+    margin: 0 auto;
+}
+  
+.carousel {
+    margin: auto;
+    position: relative;
+    width: 80%;
+    padding: 10px 40px;
+    border: 1px solid #CCC;
+    border-radius: 15px;
+    background: #eee;
+}
+
+.gallery {
+    overflow: auto;
+}
+
+.gallery::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.arrow {
+    position: absolute;
+    top: 45%;
+}
+
+.prev {
+    left: 7px;
+}
+
+.next {
+    right: 7px;
+}
+
+.gallery__list {
+    width: 5000px;
+    display: flex;
+    transition: margin-left 500ms;
+    scroll-snap-type: x mandatory;
+}
+
+.list__element {
+    scroll-snap-align: start;
+}
+
+.list__element img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 5px solid #d6d6d6;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.element-wrap {
+    position: relative;
+    height: 100%;
+}
+
+.plug {
+    position: absolute;
+    background-color: rgb(175, 175, 175, 0.3);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    display: none;
+    pointer-events: none;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.list__element:hover .plug {
+    display: flex;
+}
+
+.rectangle {
+    background-color: rgba(235, 235, 235);
+    width: 20%;
+    height: 5%;
+    margin: 0 auto;
+    position: absolute;
+}
+
+.rotate {
+    transform: rotate(90deg);
+}
+
+@media screen and (max-width: 600px) {
+    .arrow {
+        top: 30%;
+    }
+}

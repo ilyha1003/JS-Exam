@@ -1,0 +1,118 @@
+body {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../assets/torn-dictionary-paper-pages-wa88kia6o73kophn.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+.header {
+    font-size: calc(1.5rem + 1.5vw);
+    text-align: center;
+}
+
+.main {
+    height: 100vh;
+    position: relative;
+    z-index: 2;
+}
+
+.input {
+    max-width: 300px;
+}
+
+.word__list {
+    padding: 20px 0;
+}
+
+.centered {
+    margin: 0 auto;
+}
+
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+}
+
+.volume {
+    font-size: 20px;
+}
+
+.word-section {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+}
+
+.meaning-section {
+    padding: 0 10px;
+}
+
+.phonetics-section {
+    padding: 0 10px;
+}
+
+.speechpart-wrapper {
+    font-weight: 500;
+}
+
+.defenitions-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.meanings-wrapper {
+    padding: 10px 0;
+}
+
+.definitions-wrapper {
+    padding: 5px 0;
+    font-weight: 500;
+    position: relative;
+}
+
+.definitions {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    font-weight: 500;
+    background-color: rgb(233, 233, 233);
+    border-radius: 8px;
+}
+
+.definition {
+    font-weight: normal;
+    padding-bottom: 5px;
+}
+
+.show-button {
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.audio {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 5px;
+}
+
+.phonetic-field {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    font-weight: 500;
+}
+
+.transcription-field {
+    font-weight: normal;
+}
+
+.hidden {
+    display: none;
+}
